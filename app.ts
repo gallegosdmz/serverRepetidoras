@@ -21,6 +21,6 @@ app.get('/check-command', ( req: Request, res: Response ) => {
     }
 });
 
-app.listen(port, () => {
-    console.log(`Servidor central corriendo en http://localhost:${ port }`);
-})
+app.listen(3000, '0.0.0.0', () => {
+    console.log('Server is running on port 3000');
+});
